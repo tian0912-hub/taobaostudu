@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+    background-color: #f4f4f4;
+}
+a {
+    text-decoration: none;
+    color: #757575;
+    cursor: pointer;
+}
+ul,li {
+    list-style: none;
+}
+/*  版心 */
+.w {
+    width: 1190px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+/* 小标签取消默认样式 */
+i {
+    font-style: normal;
+}
+/* 清除浮动 */
+.clearfix::after {
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+/* 兼容IE */
+.clearfix {
+    zoom: 1;
+}
+/* 显示与隐藏 */
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
