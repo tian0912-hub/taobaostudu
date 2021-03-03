@@ -294,6 +294,9 @@
   color: #666666;
   position: relative;
 }
+.product-nav .all-product .menu ul li:hover {
+  background-color: #ff9000;
+}
 .product-nav .all-product .menu ul li i {
   position: absolute;
   width: 4px;
@@ -312,6 +315,9 @@
   font-size: 16px;
   color: #fff;
   padding: 0 5px;
+}
+.product-nav .item ul li a:hover {
+  color: #ff0000;
 }
 .product-nav .item ul li .a-small {
   font-size: 14px;
@@ -598,6 +604,9 @@
   width: 72px;
   margin-top: 1px;
   margin-left: 1px;
+}
+.banner .banner-right .banner-right-menu ul li:hover {
+  border: 1px solid red;
 }
 .banner .banner-right .banner-right-menu ul li:nth-child(1) {
   width: 71px;
