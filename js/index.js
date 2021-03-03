@@ -5,10 +5,20 @@ $(function(){
         if(scrollTop > 133 ) {
             // alert(1)
             $('#search-fixed').show()
+            // 控制返回顶部按钮显示与隐藏
+            if(scrollTop >900 ){
+                $('#to-top').fadeIn()
+            } else {
+                $('#to-top').fadeOut()
+            }
         }else {
             // alert(1)
             $('#search-fixed').hide()
         }
+    })
+    // 给返回顶部按钮绑定事件
+    $('#to-top').click(function(){
+        $('html, body').animate({scrollTop:0},700)
     })
     $(".search .search-center .search-center-top li").click(function() {
         console.log(this.parentNode.children);
@@ -63,6 +73,10 @@ $(function(){
 
     })
     focus.addEventListener('mouseleave',function(){
+        // 鼠标离开启动定时器
+        timer = setInterval(function() {
+            $('.arrow-r').click()
+        },1000)
         // 利用jQuery方法获取两个箭头
         $(".arrow-l").hide()
         $(".arrow-r").hide()
